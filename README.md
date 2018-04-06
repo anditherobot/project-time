@@ -38,10 +38,10 @@ After that, update your PATH environment variable to include the platform-tools,
 ### Install various dependencies using the `SDK Manager.exe` program
 After completing the [installation instructions for NativeScript](https://docs.nativescript.org/angular/start/quick-setup), you should have the Android SDK installed on your machine. Go to the Android SDK folder (e.g. C:\Program Files (x86)\Android\android-sdk) and run the `SDK Manager.exe` program **as an administrator**.
 Under the "Tools" folder, install:
-- Android SDK Tools
-- Android SDK Platform-tools
+- Android SDK Tools (Rev. 25.2.5 or later)
+- Android SDK Platform-tools (Rev. 27.0.1 or later)
 - Android SDK Build-tools (Rev. 25.0.2 and Rev. 23.0.1) -- (TODO: the `Rev.` number will depend on what version(s) of Android we want to target. Make sure to update these values when we get a better idea.)
-  - **NOTE** if you do not see these versions, then likely the SDK Manager and AVD Manager need to be updated. Just install the highest version of the Android SDK Tools that you can, which will update the SDK Manager and AVD Manager.
+- **NOTE** if you do not see these versions, then likely the SDK Manager and AVD Manager need to be updated. Just install the highest version of the Android SDK Tools that you can, which will update the SDK Manager and AVD Manager.
 
 Under the "Android 5.1.1 (API 22)" folder, install:
 - SDK Platform (Rev 2)
@@ -50,8 +50,6 @@ Under the "Android 5.1.1 (API 22)" folder, install:
 Under the "Extras" folder, install:
 - Intel x86 Emulator Accelerator (HAXM installer)
   - **NOTE** if the package's status is "Not compatible with Windows", then ensure that Hyper-V is disabled, and also refer to [this StackOverflow answer](https://stackoverflow.com/a/41102254/747275) which should tell you how to install it.
-
-**TODO** Make sure to update these directions if need-be. I had other dependencies installed that I let the Android SDK Manager automatically choose for me, whether or not these packages are necessary is unclear to me. I did not delete any packages that it suggested.
 
 ### Create an Android Virtual Device (AVD)
 Go to the Android SDK folder and run the `AVD Manager.exe` program **as an administrator**.
@@ -68,5 +66,3 @@ For further reading on creating AVDs, refer to [this](https://developer.android.
 Run `tns doctor` and ensure that it reports no issues.
 
 Follow the directions in [Chapter 1 of the NativeScript tutorial](https://docs.nativescript.org/tutorial/chapter-1). After `tns run android` you should see it compile the application, then it will launch the android emulator, which will display the text "My App".
-
-TODO: Check if it's necessary to add the Android SDK and platform-tools (in the android sdk folder) to the system path? I did but I'm not sure if this is necessary.
