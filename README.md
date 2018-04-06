@@ -29,11 +29,11 @@ This is the readme stub for the project brainstrom
 ## On Windows
 ### Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows)
 
-### Install Android SDK
-The easiest way is to install [Android Studio](https://developer.android.com/studio/install.html), which will also come in handy when doing design mock-ups. (TODO: test if directions are sufficient, i.e. if the Android Studio installer actually installs the sdk. The sdk  Folder is where the `AVD Manager.exe` and `SDK Manager.exe` files live. These programs allow you to install various Android SDKs and create emulators.)
+### Install NativeScript
+Follow the [official instructions](https://docs.nativescript.org/angular/start/quick-setup).
 
 ### Install various dependencies using the `SDK Manager.exe` program
-Go to the Android SDK folder (e.g. C:\Program Files (x86)\Android\android-sdk) and run the `SDK Manager.exe` program **as an administrator**.
+The [installation instructions for NativeScript](https://docs.nativescript.org/angular/start/quick-setup) should have installed the Android SDK on your machine. Go to the Android SDK folder (e.g. C:\Program Files (x86)\Android\android-sdk) and run the `SDK Manager.exe` program **as an administrator**.
 Under the "Tools" folder, install:
 - Android SDK Tools
 - Android SDK Platform-tools
@@ -45,7 +45,7 @@ Under the "Android 5.1.1 (API 22)" folder, install:
 
 **TODO** Make sure to update these directions if need-be. I had other dependencies installed that I let the Android SDK Manager automatically choose for me, whether or not these packages are necessary is unclear to me. I did not delete any packages that it suggested.
 
-### Create an Android Emulator
+### Create an Android Virtual Device (AVD)
 Go to the Android SDK folder and run the `AVD Manager.exe` program **as an administrator**.
 In the "Device Definitions" tab, select the **Nexus 5** option, then click the "Create AVD..." button.
 - For "CPU/ABI" choose "Intel Atom (x86)"
