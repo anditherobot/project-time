@@ -31,7 +31,7 @@ This is the readme stub for the project brainstrom
 ### Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows)
 
 ### Install NativeScript
-Follow the [official instructions](https://docs.nativescript.org/angular/start/quick-setup), although perhaps you may find that the [advanced instructions](https://docs.nativescript.org/angular/start/ns-setup-win) are more helpful, as you may already have a number of the pre-requisites already installed. Also the advanced documentation covers creating and starting ADVs.
+Follow the [official instructions](https://docs.nativescript.org/angular/start/quick-setup), although perhaps you may find that the [advanced instructions](https://docs.nativescript.org/angular/start/ns-setup-win) are more helpful, as you may already have a number of the pre-requisites already installed. Also the advanced documentation covers creating and starting Android Virtual Devices (ADVs), which will be needed later.
 
 After that, update your PATH environment variable to include the platform-tools, for me the platform-tools location is `C:\Program Files (x86)\Android\android-sdk\platform-tools`.
 
