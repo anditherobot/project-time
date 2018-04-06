@@ -31,7 +31,9 @@ This is the readme stub for the project brainstrom
 ### Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows)
 
 ### Install NativeScript
-Follow the [official instructions](https://docs.nativescript.org/angular/start/quick-setup).
+Follow the [official instructions](https://docs.nativescript.org/angular/start/quick-setup), although perhaps you may find that the [advanced instructions](https://docs.nativescript.org/angular/start/ns-setup-win) are more helpful, as you may already have a number of the pre-requisites already installed. Also the advanced documentation covers creating and starting ADVs.
+
+After that, update your PATH environment variable to include the platform-tools, for me the platform-tools location is `C:\Program Files (x86)\Android\android-sdk\platform-tools`.
 
 ### Install various dependencies using the `SDK Manager.exe` program
 The [installation instructions for NativeScript](https://docs.nativescript.org/angular/start/quick-setup) should have installed the Android SDK on your machine. Go to the Android SDK folder (e.g. C:\Program Files (x86)\Android\android-sdk) and run the `SDK Manager.exe` program **as an administrator**.
@@ -45,15 +47,20 @@ Under the "Android 5.1.1 (API 22)" folder, install:
 - SDK Platform (Rev 2)
 - Intel x86 Atom System Image
 
+Under the "Extras" folder, install:
+- Intel x86 Emulator Accelerator (HAXM installer)
+  - **NOTE** if the package's status is "Not compatible with Windows", then ensure that Hyper-V is disabled, and also refer to [this StackOverflow answer](https://stackoverflow.com/a/41102254/747275) which should tell you how to install it.
+
 **TODO** Make sure to update these directions if need-be. I had other dependencies installed that I let the Android SDK Manager automatically choose for me, whether or not these packages are necessary is unclear to me. I did not delete any packages that it suggested.
 
 ### Create an Android Virtual Device (AVD)
 Go to the Android SDK folder and run the `AVD Manager.exe` program **as an administrator**.
 In the "Device Definitions" tab, select the **Nexus 5** option, then click the "Create AVD..." button.
+- For "Target" choose "Android 5.1.1 - API Level 22"
 - For "CPU/ABI" choose "Intel Atom (x86)"
 - For "Skin" choose "Skin with dynamic hardware controls"
 
-Verify the new AVD is visible by running `adb devices` in a terminal. The "List of devices attached" should show the emulator as a device. **Note** if you get an error like `The term 'adb' is not recognized as the name of a cmdlet...` then this just means that it's not on your path. Add the location of the platform-tools to your PATH environment variable, for me it's `C:\Program Files (x86)\Android\android-sdk\platform-tools`, then restart your terminal and try the `adb devices` command again.
+Verify the new AVD is visible by running `adb devices` in a terminal. The "List of devices attached" should show the emulator as a device.
 
 For further reading on creating AVDs, refer to [this](https://developer.android.com/studio/run/managing-avds.html).
 
