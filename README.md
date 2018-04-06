@@ -50,9 +50,10 @@ Go to the Android SDK folder and run the `AVD Manager.exe` program **as an admin
 In the "Device Definitions" tab, select the **Nexus 5** option, then click the "Create AVD..." button.
 - For "CPU/ABI" choose "Intel Atom (x86)"
 - For "Skin" choose "Skin with dynamic hardware controls"
-- (TODO: elaborate on more settings? I just left it with the defaults.)
 
 Verify the new AVD is visible by running `adb devices` in a terminal. The "List of devices attached" should show the emulator as a device.
+
+For further reading on creating AVDs, refer to [this](https://developer.android.com/studio/run/managing-avds.html).
 
 ### Test the installation
 Follow the directions in [Chapter 1 of the NativeScript tutorial](https://docs.nativescript.org/tutorial/chapter-1). After `tns run android` you should see it compile the application, then it will launch the android emulator, which will display the text "My App".
