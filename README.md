@@ -37,7 +37,7 @@ The [installation instructions for NativeScript](https://docs.nativescript.org/a
 Under the "Tools" folder, install:
 - Android SDK Tools
 - Android SDK Platform-tools
-- Android SDK Build-tools (Rev. 25 and Rev. 23.0.1) -- (TODO: the `Rev.` number will depend on what version(s) of Android we want to target. Make sure to update these values when we get a better idea.)
+- Android SDK Build-tools (Rev. 25.0.2 and Rev. 23.0.1) -- (TODO: the `Rev.` number will depend on what version(s) of Android we want to target. Make sure to update these values when we get a better idea.)
   - **NOTE** if you do not see these versions, then likely the SDK Manager and AVD Manager need to be updated. Just install the highest version of the Android SDK Tools that you can, which will update the SDK Manager and AVD Manager.
 
 Under the "Android 5.1.1 (API 22)" folder, install:
