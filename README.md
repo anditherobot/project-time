@@ -11,7 +11,6 @@ This is the readme stub for the project brainstrom
 # Stack
 ## Front-end
 * Native Script with angular
-* Yarn
 ## Back-end 
 * .NET Core web api
 
