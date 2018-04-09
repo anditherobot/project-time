@@ -57,6 +57,7 @@ In the "Device Definitions" tab, select the **Nexus 5** option, then click the "
 - For "Target" choose "Android 5.1.1 - API Level 22"
 - For "CPU/ABI" choose "Intel Atom (x86)"
 - For "Skin" choose "Skin with dynamic hardware controls"
+- Once the device is created, click the  "Start" button In the "Android Virtual Devices" tab
 
 Verify the new AVD is visible by running `adb devices` in a terminal. The "List of devices attached" should show the emulator as a device.
 
