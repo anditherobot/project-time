@@ -34,6 +34,7 @@ Follow the [official instructions](https://docs.nativescript.org/angular/start/q
 
 After that, update your PATH environment variable to include the platform-tools, for me the platform-tools location is `C:\Program Files (x86)\Android\android-sdk\platform-tools`.
 
+**Note** Make sure JAVA_HOME(Java SDK ) and ANDROID_HOME(Android SDK ) system variables are setup properly.
 ### Install various dependencies using the `SDK Manager.exe` program
 After completing the [installation instructions for NativeScript](https://docs.nativescript.org/angular/start/quick-setup), you should have the Android SDK installed on your machine. Go to the Android SDK folder (e.g. C:\Program Files (x86)\Android\android-sdk) and run the `SDK Manager.exe` program **as an administrator**.
 Under the "Tools" folder, install:
